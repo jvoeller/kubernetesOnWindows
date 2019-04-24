@@ -899,7 +899,7 @@ function InstallKubelet()
                     -CniDir $CniDir -CniConf $CniConf   `
                     -KubeDnsServiceIp $KubeDnsServiceIp `
                     -NodeIp $NodeIp -KubeletFeatureGates $KubeletFeatureGates `
-                    -LogDir $logDir -cloud-provider 'azure' -cloud-config 'C:\cloud.json'
+                    -LogDir $logDir
 
     CreateService -ServiceName Kubelet -CommandLine $kubeletArgs -LogFile "$log"
 
