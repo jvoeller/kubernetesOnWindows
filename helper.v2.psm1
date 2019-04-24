@@ -783,9 +783,9 @@ function GetKubeletArguments()
         '--network-plugin=cni',
         "--cni-bin-dir=$CniDir",
         "--cni-conf-dir=$CniConf",
-        "--node-ip=$NodeIp",
-        "--cloud-provider=azure",
-        '--cloud-config=C:\kubeadm\cloud.json'
+        "--node-ip=$NodeIp"
+        #"--cloud-provider=azure",
+        #'--cloud-config=C:\kubeadm\cloud.json'
     )
 
     if ($KubeletFeatureGates -ne "")
